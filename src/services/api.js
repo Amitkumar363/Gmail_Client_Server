@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const API_URI = 'http://localhost:8000';
+const API_URI = 'https://gmail-server-2jvh.onrender.com';
 
 const API_GMAIL = async (serviceUrlObject, requestData = {}, type) => {
-    const { params, urlParams, ...body } = requestData;
+
 
     return await axios({
         method: serviceUrlObject.method,
